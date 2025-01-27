@@ -10,7 +10,7 @@ RUN nohup bash -c "ollama serve &" && \
         echo "Waiting for ollama to start..."; \
         sleep 5; \
     done && \
-    ollama pull llama3.2:3b
+    ollama pull deepseek-r1:7b
 
 EXPOSE 11434
 
