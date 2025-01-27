@@ -1,6 +1,6 @@
 # Ollama DeepSeek-R1 (7b)
 
-This README provides instructions for building and running the Ollama DeepSeek-R1:zb model Docker container and using Lilypad CLI for running on the Lilypad network.
+This README provides instructions for building and running the Ollama DeepSeek-R1:7b model Docker container and using Lilypad CLI for running on the Lilypad network.
 
 ## Prerequisites
 
