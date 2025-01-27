@@ -21,7 +21,7 @@ This README provides instructions for building and running the Ollama DeepSeek-R
 
    Basic run with GPU support:
    ```
-   docker run --gpus all ollama-deepseek-r1-7b -i Prompt="your prompt here"
+   docker run --gpus all ollama-deepseek-r1-7b "your prompt here"
    ```
 
 ## Running on Lilypad Network
