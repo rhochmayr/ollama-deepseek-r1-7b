@@ -38,7 +38,7 @@ Replace `<admin_key>` with the admin key found in `hardhat/utils/accounts.ts`.
 
 Example:
 ```
-go run . run --network dev github.com/rhochmayr/ollama-deepseek-r1-7b:0.1.0 --web3-private-key <admin_key> -i Prompt="A lengthy conversation between two physicists about the latest discovery in quantum technology"
+go run . run --network dev github.com/rhochmayr/ollama-deepseek-r1-7b:0.1.0 --web3-private-key <admin_key> -i Prompt="There are 49 dogs signed up for a dog show. There are 36 more small dogs than large dogs. How many small dogs have signed up to compete?"
 ```
 
 ### Using Lilypad Main Network
@@ -51,7 +51,7 @@ lilypad run github.com/rhochmayr/ollama-deepseek-r1-7b:0.1.0 -i Prompt="your pro
 
 Example:
 ```
-lilypad run github.com/rhochmayr/ollama-deepseek-r1-7b:0.1.0 -i Prompt="A lengthy conversation between two physicists about the latest discovery in quantum technology"
+lilypad run github.com/rhochmayr/ollama-deepseek-r1-7b:0.1.0 -i Prompt="There are 49 dogs signed up for a dog show. There are 36 more small dogs than large dogs. How many small dogs have signed up to compete?"
 ```
 
 ## Notes
