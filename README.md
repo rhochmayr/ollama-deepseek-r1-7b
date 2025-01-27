@@ -31,14 +31,14 @@ This README provides instructions for building and running the Ollama DeepSeek-R
 To run on the local development network:
 
 ```
-go run . run --network dev github.com/rhochmayr/ollama-deepseek-r1-7b:0.1.0 --web3-private-key <admin_key> -i Prompt="your prompt here"
+go run . run --network dev github.com/rhochmayr/ollama-deepseek-r1-7b:1.0.0 --web3-private-key <admin_key> -i Prompt="your prompt here"
 ```
 
 Replace `<admin_key>` with the admin key found in `hardhat/utils/accounts.ts`.
 
 Example:
 ```
-go run . run --network dev github.com/rhochmayr/ollama-deepseek-r1-7b:0.1.0 --web3-private-key <admin_key> -i Prompt="There are 49 dogs signed up for a dog show. There are 36 more small dogs than large dogs. How many small dogs have signed up to compete?"
+go run . run --network dev github.com/rhochmayr/ollama-deepseek-r1-7b:1.0.0 --web3-private-key <admin_key> -i Prompt="There are 49 dogs signed up for a dog show. There are 36 more small dogs than large dogs. How many small dogs have signed up to compete?"
 ```
 
 ### Using Lilypad Main Network
@@ -46,18 +46,18 @@ go run . run --network dev github.com/rhochmayr/ollama-deepseek-r1-7b:0.1.0 --we
 To run on the main Lilypad network:
 
 ```
-lilypad run github.com/rhochmayr/ollama-deepseek-r1-7b:0.1.0 -i Prompt="your prompt here"
+lilypad run github.com/rhochmayr/ollama-deepseek-r1-7b:1.0.0 -i Prompt="your prompt here"
 ```
 
 Example:
 ```
-lilypad run github.com/rhochmayr/ollama-deepseek-r1-7b:0.1.0 -i Prompt="There are 49 dogs signed up for a dog show. There are 36 more small dogs than large dogs. How many small dogs have signed up to compete?"
+lilypad run github.com/rhochmayr/ollama-deepseek-r1-7b:1.0.0 -i Prompt="There are 49 dogs signed up for a dog show. There are 36 more small dogs than large dogs. How many small dogs have signed up to compete?"
 ```
 
 ## Notes
 
 - Ensure you have the necessary permissions and resources to run Docker containers with GPU support.
-- The module version (`0.1.0`) may be updated. Check for the latest version before running.
+- The module version (`1.0.0`) may be updated. Check for the latest version before running.
 
 ## Dependencies and Credits
 
