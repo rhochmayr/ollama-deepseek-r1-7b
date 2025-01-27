@@ -57,7 +57,7 @@ lilypad run github.com/rhochmayr/ollama-deepseek-r1-7b:0.1.0 -i Prompt="There ar
 ## Notes
 
 - Ensure you have the necessary permissions and resources to run Docker containers with GPU support.
-- The module version (`0.1.6`) may be updated. Check for the latest version before running.
+- The module version (`0.1.0`) may be updated. Check for the latest version before running.
 
 ## Dependencies and Credits
 
