@@ -1,0 +1,36 @@
+{
+  "machine": {
+    "gpu": 1,
+    "cpu": 8000,
+    "ram": 16000
+  },
+  "job": {
+    "APIVersion": "V1beta1",
+    "Spec": {
+      "Deal": {
+        "Concurrency": 1
+      },
+      "Docker": {
+        "Entrypoint": [
+            "/run_ollama.sh", 
+            {{ if .Prompt }} {{ .Prompt }} {{else}}"There are 49 dogs signed up for a dog show. There are 36 more small dogs than large dogs. How many small dogs have signed up to compete?"{{ end }}
+        ],
+        "Image": "ghcr.io/rhochmayr/ollama-deepseek-r1-7b:latest"
+      },
+      "Engine": "Docker",
+      "Network": {
+        "Type": "None"
+      },
+      "PublisherSpec": {
+        "Type": "IPFS"
+      },
+      "Resources": {
+        "GPU": "1",
+        "cpu": "8",
+        "memory": "16Gb"
+      },
+      "Timeout": 1800,
+      "Verifier": "Noop"
+    }
+  }
+}
