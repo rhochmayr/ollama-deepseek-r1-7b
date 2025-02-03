@@ -14,7 +14,7 @@ This README provides instructions for building and running the Ollama DeepSeek-R
 
 2. Build the Docker image:
    ```
-   docker build -t ollama-deepseek-r1-7b
+   docker build -t ollama-deepseek-r1-7b .
    ```
 
 3. Run the container:
@@ -31,14 +31,14 @@ This README provides instructions for building and running the Ollama DeepSeek-R
 To run on the local development network:
 
 ```
-go run . run --network dev github.com/rhochmayr/ollama-deepseek-r1-7b:1.0.0 --web3-private-key <admin_key> -i Prompt="your prompt here"
+go run . run --network dev github.com/rhochmayr/ollama-deepseek-r1-7b:1.0.0 --web3-private-key <private-key> -i Prompt="your prompt here"
 ```
 
 Replace `<admin_key>` with the admin key found in `hardhat/utils/accounts.ts`.
 
 Example:
 ```
-go run . run --network dev github.com/rhochmayr/ollama-deepseek-r1-7b:1.0.0 --web3-private-key <admin_key> -i Prompt="There are 49 dogs signed up for a dog show. There are 36 more small dogs than large dogs. How many small dogs have signed up to compete?"
+go run . run --network dev github.com/rhochmayr/ollama-deepseek-r1-7b:1.0.0 --web3-private-key <private-key> -i Prompt="There are 49 dogs signed up for a dog show. There are 36 more small dogs than large dogs. How many small dogs have signed up to compete?"
 ```
 
 ### Using Lilypad Main Network
